@@ -46,7 +46,7 @@ public class BatTipHitter : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (hitTrigger == null || tip == null) return;
-        if (!other.CompareTag("Ball")) return;
+        if (tag == "Ball") return;
         if (other.attachedRigidbody == null) return;
 
         // 冷却：同一颗球短时间只触发一次
