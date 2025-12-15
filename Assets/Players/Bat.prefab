@@ -212,11 +212,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4368966684529909702}
-  - component: {fileID: 6513522603738325176}
-  - component: {fileID: 4305196419290412870}
   - component: {fileID: 8277759090342987056}
-  - component: {fileID: 3285766822975026371}
   - component: {fileID: 4279471921158005015}
+  - component: {fileID: -8771786531806041186}
   m_Layer: 0
   m_Name: Bat
   m_TagString: Bat
@@ -244,112 +242,6 @@ Transform:
   - {fileID: 4488571553528232232}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6513522603738325176
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2561982215693929933}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b93b6a877adcbf94c89a9d6e0c0e844d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activateActionSetOnAttach:
-    actionSetPath: 
-  hideHandOnAttach: 0
-  hideSkeletonOnAttach: 0
-  hideControllerOnAttach: 0
-  handAnimationOnPickup: 0
-  setRangeOfMotionOnPickup: -1
-  useHandObjectAttachmentPoint: 0
-  attachEaseIn: 0
-  snapAttachEaseInCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  snapAttachEaseInTime: 0.15
-  snapAttachEaseInCompleted: 0
-  skeletonPoser: {fileID: 0}
-  handFollowTransform: 0
-  highlightOnHover: 1
-  hideHighlight: []
-  hoverPriority: 0
---- !u!114 &4305196419290412870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2561982215693929933}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffefbea063cab884ca33e5a449e5c22c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attachmentFlags: 61
-  attachmentOffset: {fileID: 3682213473103594385}
-  catchingSpeedThreshold: -1
-  releaseVelocityStyle: 1
-  releaseVelocityTimeOffset: -0.011
-  scaleReleaseVelocity: 2
-  scaleReleaseVelocityThreshold: -1
-  scaleReleaseVelocityCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  restoreOriginalParent: 0
-  onPickUp:
-    m_PersistentCalls:
-      m_Calls: []
-  onDetachFromHand:
-    m_PersistentCalls:
-      m_Calls: []
-  onHeldUpdate:
-    m_PersistentCalls:
-      m_Calls: []
-  interactable: {fileID: 0}
 --- !u!54 &8277759090342987056
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -377,31 +269,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
---- !u!114 &3285766822975026371
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2561982215693929933}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 552fc16fadf08b4469e4a7cc1b876b0e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tip: {fileID: 2034352351801744155}
-  hitTrigger: {fileID: 3211265351645721749}
-  powerScale: 1.3
-  minExitSpeed: 18
-  maxExitSpeed: 60
-  upBias: 0.25
-  forwardAssist: 0.2
-  launchAngleClamp: {x: 8, y: 40}
-  sideSpinScale: 120
-  topSpinScale: 80
-  sameBallCooldown: 0.04
-  audioSource: {fileID: 4279471921158005015}
-  audioClip: {fileID: 8300000, guid: f66a9dacee90d3d42b53a7a710fdd667, type: 3}
 --- !u!82 &4279471921158005015
 AudioSource:
   m_ObjectHideFlags: 0
@@ -499,6 +366,31 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-8771786531806041186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2561982215693929933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 552fc16fadf08b4469e4a7cc1b876b0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tip: {fileID: 0}
+  hitTrigger: {fileID: 5964856420452627481}
+  powerScale: 1.3
+  minExitSpeed: 18
+  maxExitSpeed: 60
+  upBias: 0.25
+  forwardAssist: 0.2
+  launchAngleClamp: {x: 8, y: 40}
+  sideSpinScale: 120
+  topSpinScale: 80
+  sameBallCooldown: 0.04
+  audioSource: {fileID: 0}
+  audioClip: {fileID: 0}
 --- !u!1 &4118509330162974677
 GameObject:
   m_ObjectHideFlags: 0
